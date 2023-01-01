@@ -1,7 +1,7 @@
 FROM node:7
 WORKDIR /app
 COPY package.json /app
-RUN nmp install
+RUN npm install
 COPY . /app
 CMD node server.js
 EXPOSE 8000
